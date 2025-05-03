@@ -10,7 +10,7 @@ from zipfile import ZipFile
 bar = st.progress(0)
 
 #Taking the API from assembly AI API 
-api_key = st.secrets['f06030c8eedb496f8f9dc47815b070ad']
+api_key = st.secrets["general"]["api_key"]
 
 
 #Retrieving audio file from Youtube video 
@@ -77,7 +77,7 @@ def transcribe_yt():
     bar.progress(50)
 
     #Retreiving the transcription results 
-    endpoint = f"https://api/assemblyai.com/v2/transcript/{transcript_id}"
+    endpoint = f"https://api.assemblyai.com/v2/transcript/{transcript_id}"
     headers = {
         "authorization": api_key,
     }
