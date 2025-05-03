@@ -2,7 +2,7 @@
 #Importing all the libraries 
 
 import streamlit as st
-from pytube import Youtube
+from pytube import YouTube
 from utilities import get_yt, transcribe_yt
 
 
